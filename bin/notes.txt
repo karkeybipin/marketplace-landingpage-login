@@ -1,0 +1,35 @@
+login.php
+
+// include 'config.php';
+// include 'database.php';
+
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//     $username = $_POST['username'];
+//     $password = $_POST['password'];
+
+//     $conn = OpenCon(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+
+//     // Use prepared statement to avoid SQL injection
+//     $stmt = $conn->prepare("SELECT * FROM users WHERE username = ?");
+//     $stmt->bind_param("s", $username);
+
+//     $stmt->execute();
+//     $result = $stmt->get_result();
+
+//     if ($result->num_rows == 1) {
+//         $row = $result->fetch_assoc();
+//         if (password_verify($password, $row['password'])) {
+//             // Login successful
+//             echo "Login successful!";
+//         } else {
+//             // Invalid password
+//             echo "Invalid password!";
+//         }
+//     } else {
+//         // User not found
+//         echo "User not found!";
+//     }
+
+//     $stmt->close();
+//     CloseCon($conn);
+// }
